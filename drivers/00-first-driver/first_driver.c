@@ -40,6 +40,7 @@ static int __init hello_world_init(void)
 	 printk(KERN_INFO "Kernel module inserted successfully...\n");
 	 return 0;
 }
+
 /**
  *  Module Exit function
  */

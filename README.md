@@ -297,14 +297,14 @@ Contributions, bug reports and feature requests are welcome.
 
 ---
 
-# Resources
+# References
 
-Useful references:
+The learning process follows the path laid out by the  [Linux Device Driver Tutorials](https://embetronicx.com/linux-device-driver-tutorials/) from EmbetronicX.
 
-- Linux Kernel Documentation
-- Raspberry Pi Documentation
-- Linux Device Drivers (LDD3)
-- Bootlin Embedded Linux Resources
+Thank you for your great work ! 
+
+And be sure to check out his work on [GitHub](https://github.com/Embetronicx/Tutorials/tree/master/Linux/Device_Driver) as well. 
+
 
 ---
 
