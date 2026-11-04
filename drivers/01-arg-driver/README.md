@@ -29,8 +29,8 @@ Expected output:
 The driver project should contain at least:
 
 ```text
-── 00-first-driver/
-    ├── first_driver.c
+── 01-arg-driver/
+    ├── arg_driver.c
     └── Makefile
 ```
 
@@ -47,7 +47,7 @@ make all
 After a successful build, a kernel module (`.ko`) file will be generated:
 
 ```text
-first_driver.ko
+arg_driver.ko
 ```
 
 The `.ko` file is the loadable Linux Kernel Module.
@@ -59,13 +59,13 @@ The `.ko` file is the loadable Linux Kernel Module.
 Insert the module into the running kernel:
 
 ```bash
-sudo insmod first_driver.ko
+sudo insmod arg_driver.ko
 ```
 
 Verify that the module has been loaded:
 
 ```bash
-lsmod | grep first_driver
+lsmod | grep arg_driver
 ```
 
 ---
@@ -78,12 +78,6 @@ Display recent kernel log messages:
 dmesg | tail -n 20
 ```
 
-Example:
-
-```text
-[ 1234.567 ] First Driver Loaded
-```
-
 ---
 
 ### 6. Remove the Driver
@@ -91,13 +85,13 @@ Example:
 Unload the module from the kernel:
 
 ```bash
-sudo rmmod first_driver
+sudo rmmod arg_driver
 ```
 
 Verify removal:
 
 ```bash
-lsmod | grep first_driver
+lsmod | grep arg_driver
 ```
 
 No output indicates that the module was successfully unloaded.
@@ -111,10 +105,10 @@ uname -r                      # Current Kernel Version
 
 lsmod                         # List Loaded Modules
 
-modinfo first_driver.ko       # Module Information
+modinfo arg_driver.ko       # Module Information
 
 dmesg | tail -n 20            # Recent Kernel Logs
 
-sudo insmod first_driver.ko   # Load Module
+sudo insmod arg_driver.ko   # Load Module
 
-sudo rmmod first_driver       # Unload Module
+sudo rmmod arg_driver       # Unload Module

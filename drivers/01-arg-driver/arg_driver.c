@@ -52,7 +52,7 @@ int notify_param_cb (const char *val, const struct kernel_param *kp)
 /**
  *  Module Init function
  */
-static int __init hello_world_init(void)
+static int __init arg_module_init(void)
 {
 	int i;
 	printk(KERN_INFO "Value of value_extern: %d\n", value_extern);
@@ -69,10 +69,10 @@ static int __init hello_world_init(void)
 /**
  *  Module Exit function
  */
-static void __exit hello_world_exit(void)
+static void __exit arg_module_exit(void)
 {
 	printk(KERN_INFO "Kernel module removed successfully...\n");
 }
 
-module_init(hello_world_init);
-module_exit(hello_world_exit);
+module_init(arg_module_init);
+module_exit(arg_module_exit);
