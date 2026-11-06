@@ -64,7 +64,7 @@ Each driver includes:
 
 ✅ Linux Kernel Modules
 
-☐ Character Device Drivers
+✅ Character Device Drivers
 
 ☐ GPIO Drivers
 
@@ -97,7 +97,6 @@ Current development targets:
 | Board |
 |---------|
 | Raspberry Pi 4 |
-| Raspberry Pi 5 |
 
 Supported Linux versions:
 
